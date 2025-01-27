@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus Jakarta Sans"),
+    url("./assets/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500 800;
+  font-display: swap;
+}
+
+.app {
+  --clr-purple-900: rgb(19, 24, 63);
+  --clr-purple-600: rgb(102, 108, 163);
+  --clr-pink-600: rgb(247, 71, 128);
+  --clr-pink-300: rgb(255, 167, 195);
+  --clr-grey: rgb(131, 134, 154);
+  --clr-white: rgb(255, 255, 255);
+
+  --grd-pink: linear-gradient(0deg, rgb(240, 42, 166), rgb(255, 111, 72));
+  --grd-purple: linear-gradient(180deg, rgb(72, 81, 255), rgb(240, 42, 166));
+
+  --ff-plus-jararta-sans: "Plus Jakarta Sans", sans-serif;
+
+  --fw-800: 800;
+  --fw-700: 700;
+  --fw-500: 500;
+
+  --fs-3xl: clamp(2.5rem, 1.5rem + 4.1667vw, 3.5rem);
+  --fs-2xl: clamp(2rem, 1.5rem + 2.0833vw, 2.5rem);
+  --fs-xl: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
+  --fs-lg: clamp(1.25rem, 1rem + 1.0417vw, 1.5rem);
+  --fs-rg: 1.125rem;
+  --fs-sm: clamp(0.875rem, 0.75rem + 0.5208vw, 1rem);
+
+  --lh-150: 150%;
+  --lh-120: 120%;
+
+  --spc-1800: 9rem;
+  --spc-1600: 8rem;
+  --spc-1000: 5rem;
+  --spc-800: 4rem;
+  --spc-700: 3.5rem;
+  --spc-600: 3rem;
+  --spc-550: 2.75rem;
+  --spc-500: 2.5rem;
+  --spc-400: 2rem;
+  --spc-300: 1.5rem;
+  --spc-250: 1.25rem;
+  --spc-200: 1rem;
+  --spc-150: 0.75rem;
+  --spc-100: 0.5rem;
+
+  min-height: 100svh;
+
+  color: var(--clr-grey);
+  background-color: var(--clr-white);
+}
+
+/*
+  TEXT PRESETS
+*/
+
+.text-preset-1 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-800);
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-120);
+}
+
+.text-preset-2 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-800);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-120);
+}
+
+.text-preset-3 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-800);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-120);
+}
+
+.text-preset-4 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-800);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-120);
+}
+
+.text-preset-5 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-rg);
+  line-height: var(--lh-150);
+}
+
+.text-preset-6 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-150);
+}
+
+.text-preset-7 {
+  font-family: var(--ff-plus-jararta-sans);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-rg);
+  line-height: var(--lh-150);
+}
