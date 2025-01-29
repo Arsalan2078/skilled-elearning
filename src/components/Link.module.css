@@ -1,0 +1,10 @@
+.link {
+  color: var(--clr-pink-600);
+
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--clr-pink-300);
+  }
+}

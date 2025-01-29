@@ -1,0 +1,50 @@
+.button {
+  --_bg-image: var(--bg-image);
+  --_bg-color: var(--bg-color);
+  --_bg-color-hover: var(--bg-color-hover);
+  --_text-color: var(--text-color);
+
+  background: var(--_bg-image);
+  background-color: var(--_bg-color);
+  color: var(--_text-color);
+  background-blend-mode: screen;
+
+  border-radius: 1.75rem;
+  padding: var(--spc-150) var(--spc-300);
+
+  cursor: pointer;
+  display: inline-block;
+
+  transition: background-color var(--transition);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--_bg-color-hover);
+}
+
+@media (min-width: 48rem) {
+  .button {
+    padding: 1rem 2rem;
+  }
+}
+
+/* MODIFIERS */
+
+.button--black {
+  --bg-color: var(--clr-purple-900);
+  --text-color: var(--clr-white);
+  --bg-color-hover: var(--clr-purple-600);
+}
+
+.button--orange {
+  --bg-image: var(--grd-pink);
+  --text-color: var(--clr-white);
+  --bg-color-hover: hsla(0, 0%, 100%, 0.5);
+}
+
+.button--purple {
+  --bg-image: var(--grd-purple);
+  --text-color: var(--clr-white);
+  --bg-color-hover: hsla(0, 0%, 100%, 0.5);
+}

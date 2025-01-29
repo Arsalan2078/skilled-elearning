@@ -48,7 +48,10 @@
   --spc-150: 0.75rem;
   --spc-100: 0.5rem;
 
+  --transition: 0.15s ease-out;
+
   min-height: 100svh;
+  overflow-x: hidden;
 
   color: var(--clr-grey);
   background-color: var(--clr-white);
